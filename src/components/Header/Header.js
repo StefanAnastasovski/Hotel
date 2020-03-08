@@ -1,35 +1,35 @@
 import React from "react";
 
-import Auxilliary from "../../../../hoc/Auxilliary";
-import '../layout.css'
-import logo from "../../../../images/logo-hotel.png";
+import Aux from "../../hoc/Auxilliary";
+import '../Layout/layout.css'
+import logo from "../../images/logo-hotel.png";
 
 const Header = (props) => {
 
     let showProfile;
     if(!props.isLogin){
         showProfile = (
-            <Auxilliary>
-                <li><a href="Home">Home</a></li>
-                <li><a href="About Us">About Us</a></li>
-                <li><a href="Gallery">Gallery</a></li>
-                <li><a href="Reservation">Reservation</a></li>
-                <li><a href="Contact Us">Contact Us</a></li>
-                <li><a href="Sign Up">Sign Up</a></li>
-                <li><a href="Login">Login</a></li>
-            </Auxilliary>
+            <Aux>
+                <li><a href="/">Home</a></li>
+                <li><a href="/About Us">About Us</a></li>
+                <li><a href="/Gallery">Gallery</a></li>
+                <li><a href="/Reservation">Reservation</a></li>
+                <li><a href="/Contact Us">Contact Us</a></li>
+                <li><a href="/Sign Up">Sign Up</a></li>
+                <li><a href="/Login">Login</a></li>
+            </Aux>
         )
     }
     else{
         showProfile = (
-            <Auxilliary>
-                <li><a href="Home">Home</a></li>
-                <li><a href="About Us">About Us</a></li>
-                <li><a href="Gallery">Gallery</a></li>
-                <li><a href="Reservation">Reservation</a></li>
-                <li><a href="Contact Us">Contact Us</a></li>
-                <li><a href="Username">Username: {props.username}</a></li>
-            </Auxilliary>
+            <Aux>
+                <li><a href="/">Home</a></li>
+                <li><a href="/About Us">About Us</a></li>
+                <li><a href="/Gallery">Gallery</a></li>
+                <li><a href="/Reservation">Reservation</a></li>
+                <li><a href="/Contact Us">Contact Us</a></li>
+                <li><a href="/Profile">Username: {props.username}</a></li>
+            </Aux>
         )
     }
 

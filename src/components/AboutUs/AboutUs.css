@@ -1,0 +1,5 @@
+
+#root div.layout-container {
+    min-height:100% !important;
+    position:relative;
+}
