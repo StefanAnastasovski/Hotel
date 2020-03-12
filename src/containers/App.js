@@ -42,11 +42,11 @@ class App extends Component {
                             </Route>
                         </Switch>
 
-                        {/*<Switch>*/}
-                        {/*    <Route exact path="/">*/}
-                        {/*        <Layout positionFooter={this.state.positionFooterAbsolute} componentName={'home'}/>*/}
-                        {/*    </Route>*/}
-                        {/*</Switch>*/}
+                        <Switch>
+                            <Route exact path="/Gallery">
+                                <Layout positionFooter={false} componentName={'gallery'}/>
+                            </Route>
+                        </Switch>
 
                         {/*<Switch>*/}
                         {/*    <Route exact path="/">*/}

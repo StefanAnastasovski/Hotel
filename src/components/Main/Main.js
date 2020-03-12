@@ -6,20 +6,23 @@ import AboutUs from "../AboutUs/AboutUs";
 import ContactUs from "../ContactUs/ContactUs";
 import Aux from "../../hoc/Auxilliary";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import Gallery from "../Gallery/Gallery";
 
 const Main = (props) => {
 
     let component = {};
     let compName = props.componentName;
 
-    if(compName){
-        if(compName === 'home')
+    if (compName) {
+        if (compName === 'home')
             component = <Home />;
 
-        else if(compName === 'aboutus')
+        else if (compName === 'aboutus')
             component = <AboutUs />;
         else if (compName === 'contactus')
             component = <ContactUs />;
+        else if (compName === 'gallery')
+            component = <Gallery />;
 
 
     }
