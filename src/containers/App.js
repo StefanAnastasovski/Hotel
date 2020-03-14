@@ -3,10 +3,9 @@ import './App.css';
 import Layout from "../components/Layout/Layout";
 import queryString from 'query-string';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import Main from "../components/Main/Main";
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import AboutUs from "../components/AboutUs/AboutUs";
+
 import Aux from "../hoc/Auxilliary";
 
 class App extends Component {
@@ -16,6 +15,7 @@ class App extends Component {
     render() {
 
         return (
+            
             <Aux>
 
                 <div className="layout-container col px-0">
@@ -48,11 +48,11 @@ class App extends Component {
                             </Route>
                         </Switch>
 
-                        {/*<Switch>*/}
-                        {/*    <Route exact path="/">*/}
-                        {/*        <Layout positionFooter={this.state.positionFooterAbsolute} componentName={'home'}/>*/}
-                        {/*    </Route>*/}
-                        {/*</Switch>*/}
+                        <Switch>
+                            <Route exact path="/Reservation">
+                                <Layout positionFooter={false} componentName={'reservation'}/>
+                            </Route>
+                        </Switch>
 
                         {/*<Switch>*/}
                         {/*    <Route exact path="/">*/}

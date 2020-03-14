@@ -20,7 +20,7 @@ const Footer = (props) => {
     }
     return (
 
-        <div className="row m-0">
+        <div className="row">
 
             <div className="col px-0">
 
@@ -28,7 +28,7 @@ const Footer = (props) => {
 
                     <div className="container pt-4">
 
-                        <div className="row m-0">
+                        <div className="row">
 
                             <div className="col ">
 
@@ -74,7 +74,7 @@ const Footer = (props) => {
 
                                 <div className="text-center ">
 
-                                    <p className="text-center m-0 w-100">
+                                    <p className="text-center w-100">
                                         © 2020 Stefan Hotel. All rights reserved.
                                     </p>
 

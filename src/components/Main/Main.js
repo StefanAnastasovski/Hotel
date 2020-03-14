@@ -1,12 +1,13 @@
 import React from "react";
 
 import '../Layout/layout.css'
+import Aux from "../../hoc/Auxilliary";
+
 import Home from "../Home/Home";
 import AboutUs from "../AboutUs/AboutUs";
 import ContactUs from "../ContactUs/ContactUs";
-import Aux from "../../hoc/Auxilliary";
-import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import Gallery from "../Gallery/Gallery";
+import Reservation from "../Reservation/Reservation"
 
 const Main = (props) => {
 
@@ -23,7 +24,8 @@ const Main = (props) => {
             component = <ContactUs />;
         else if (compName === 'gallery')
             component = <Gallery />;
-
+        else if (compName === 'reservation')
+            component = <Reservation />;
 
     }
 

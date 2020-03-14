@@ -1,0 +1,19 @@
+
+.reservation p{
+    font-size: 1.5em !important;
+}
+
+.reservation .res-btn{
+    background-color: rgba(173, 216, 230, 0.35) !important;
+    padding: 1em 4em;
+
+}
+
+.reservation-table-gallery img, .reservation-room-gallery img{
+    border-radius: 40px;
+    padding: 20px;
+}
+
+.reservation-button{
+    /*position: relative;*/
+}

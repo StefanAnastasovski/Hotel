@@ -8,6 +8,7 @@ const AboutUs = () => {
 
 
     return (
+
         <Aux>
 
             <div className="about-us row mx-0 main-part">

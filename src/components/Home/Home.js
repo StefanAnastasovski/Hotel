@@ -1,18 +1,11 @@
-import React, {Component} from "react";
+import React from "react";
 import '../common/height-100.css'
 import Aux from "../../hoc/Auxilliary";
 import mainPicture from '../../images/picture-1.jpg'
 import miamiPicture from '../../images/miami.jpg'
 
 
-class Home extends Component{
-
-    state = {
-        isLogin: false,
-        username: 'Stefan'
-    };
-
-    render(){
+const Home = () => {
 
         return (
 
@@ -94,8 +87,7 @@ class Home extends Component{
 
            </Aux>
         )
-    }
 
-}
+};
 
 export default Home;

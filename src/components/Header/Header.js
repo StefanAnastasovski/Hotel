@@ -34,7 +34,7 @@ const Header = (props) => {
     }
 
     return (
-        <div className="header row m-0">
+        <div className="header row">
             <div className="container row mx-auto
                     justify-content-between
                     align-items-center

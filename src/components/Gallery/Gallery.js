@@ -97,6 +97,7 @@ class Gallery extends Component {
                                     className="bg-white-20 font-weight-bold text-20px">
                                 {left}
                             </Button>
+
                         </div>
 
                         <div className="position-absolute top-50 pos-right">

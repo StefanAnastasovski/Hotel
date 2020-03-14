@@ -1,3 +1,11 @@
 .App {
   text-align: center;
 }
+
+.col, .container{
+  padding:0 !important;
+}
+
+.row{
+  margin:0 !important;
+}
