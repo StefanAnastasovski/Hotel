@@ -17,3 +17,56 @@
 .reservation-button{
     /*position: relative;*/
 }
+
+/*room-table*/
+
+.react-datepicker-wrapper {
+    width: 100%;
+    padding-right: 3px;
+}
+
+.react-datepicker-wrapper input {
+    border-radius: 10px;
+    border: 1px solid grey;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.react-time-picker {
+    width: 100%;
+    margin-left: 3px;
+    border-radius: 10px;
+    border: 1px solid grey;
+
+}
+
+.react-time-picker__wrapper {
+    border: 0 !important;
+}
+
+.reserve-btn {
+    padding: 10px 0 !important;
+    color: white;
+    background-color: #0c5460;
+}
+
+.reserve-btn:hover {
+    background: #bebebe;
+    color: #0c5460;
+    border: 1px solid #0c5460 !important;
+}
+
+.reservation-image {
+    height: 100%;
+    padding: 20px;
+}
+
+.res-img {
+    object-fit: cover;
+    border-radius: 30%;
+}
+
+.select-reservation{
+    border-radius: 10px;
+    padding: 2px;
+}

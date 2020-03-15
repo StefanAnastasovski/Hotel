@@ -14,7 +14,7 @@ const Footer = (props) => {
 
     let footerAbsolute;
     if (props.positionFooter) {
-        footerAbsolute = ' ' + 'footer-absolute';
+        footerAbsolute = ' footer-absolute';
     } else {
         footerAbsolute = '';
     }

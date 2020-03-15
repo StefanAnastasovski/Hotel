@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+
 import './App.css';
 import Layout from "../components/Layout/Layout";
-import queryString from 'query-string';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 //bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,7 +16,7 @@ class App extends Component {
     render() {
 
         return (
-            
+
             <Aux>
 
                 <div className="layout-container col px-0">
@@ -24,6 +25,10 @@ class App extends Component {
 
                         <Switch>
                             <Route exact path="/">
+                                <Redirect from="/" to="/Home"/>
+                            </Route>
+
+                            <Route exact path="/Home">
                                 <Layout positionFooter={false} componentName={'home'}/>
                             </Route>
                         </Switch>
@@ -38,7 +43,7 @@ class App extends Component {
 
                         <Switch>
                             <Route exact path="/Contact Us">
-                                <Layout  componentName={'contactus'}/>
+                                <Layout componentName={'contactus'}/>
                             </Route>
                         </Switch>
 
@@ -71,13 +76,6 @@ class App extends Component {
                         {/*        <Layout positionFooter={this.state.positionFooterAbsolute} componentName={'home'}/>*/}
                         {/*    </Route>*/}
                         {/*</Switch>*/}
-
-                        {/*<Switch>*/}
-                        {/*    <Route exact path="/">*/}
-                        {/*        <Layout positionFooter={this.state.positionFooterAbsolute} componentName={'home'}/>*/}
-                        {/*    </Route>*/}
-                        {/*</Switch>*/}
-
 
 
                     </Router>
