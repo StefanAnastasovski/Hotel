@@ -59,23 +59,31 @@ class App extends Component {
                             </Route>
                         </Switch>
 
-                        {/*<Switch>*/}
-                        {/*    <Route exact path="/">*/}
-                        {/*        <Layout positionFooter={this.state.positionFooterAbsolute} componentName={'home'}/>*/}
+                       <Switch>
+                            <Route exact path="/Sign Up">
+                                <Layout positionFooter={false} componentName={'signup'}/>
+                            </Route>
+                        </Switch>
+
+                         <Switch>
+                            <Route exact path="/Login">
+                                <Layout positionFooter={false} componentName={'login'}/>
+                            </Route>
+                        </Switch>
+
+
+                        {/* <Switch>*/}
+                        {/*    <Route exact path="/Profile">*/}
+                        {/*        <Layout positionFooter={false} componentName={'reservation'}/>*/}
                         {/*    </Route>*/}
                         {/*</Switch>*/}
 
-                        {/*<Switch>*/}
-                        {/*    <Route exact path="/">*/}
-                        {/*        <Layout positionFooter={this.state.positionFooterAbsolute} componentName={'home'}/>*/}
+                        {/*  <Switch>*/}
+                        {/*    <Route exact path="/Payment">*/}
+                        {/*        <Layout positionFooter={false} componentName={'reservation'}/>*/}
                         {/*    </Route>*/}
                         {/*</Switch>*/}
 
-                        {/*<Switch>*/}
-                        {/*    <Route exact path="/">*/}
-                        {/*        <Layout positionFooter={this.state.positionFooterAbsolute} componentName={'home'}/>*/}
-                        {/*    </Route>*/}
-                        {/*</Switch>*/}
 
 
                     </Router>

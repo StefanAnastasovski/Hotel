@@ -8,6 +8,8 @@ import AboutUs from "../AboutUs/AboutUs";
 import ContactUs from "../ContactUs/ContactUs";
 import Gallery from "../Gallery/Gallery";
 import Reservation from "../Reservation/Reservation"
+import SignUp from "../SignUp/SignUp";
+import Login from "../Login/Login";
 
 const Main = (props) => {
 
@@ -16,17 +18,19 @@ const Main = (props) => {
 
     if (compName) {
         if (compName === 'home')
-            component = <Home />;
-
+            component = <Home/>;
         else if (compName === 'aboutus')
-            component = <AboutUs />;
+            component = <AboutUs/>;
         else if (compName === 'contactus')
-            component = <ContactUs />;
+            component = <ContactUs/>;
         else if (compName === 'gallery')
-            component = <Gallery />;
+            component = <Gallery/>;
         else if (compName === 'reservation')
-            component = <Reservation />;
-
+            component = <Reservation/>;
+        else if (compName === 'signup')
+            component = <SignUp/>;
+        else if (compName === 'login')
+            component = <Login/>;
     }
 
     return (

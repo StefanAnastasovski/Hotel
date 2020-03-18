@@ -26,9 +26,6 @@ class Reservation extends Component {
         showResTable: false
     };
 
-    min = new Date(2020, 2, 10, 6, 0);
-    max = new Date(2100, 2, 10, 24, 0);
-
     startDateHandle = date => {
         this.setState({
             startDate: date
