@@ -10,6 +10,7 @@ import Reservation from "../Reservation/Reservation"
 import SignUp from "../SignUp/SignUp";
 import Login from "../Login/Login";
 import Order from "../Order/Order";
+import Profile from "../Profile/Profile";
 
 import './Main.css';
 
@@ -21,20 +22,22 @@ const Main = (props) => {
     if (compName) {
         if (compName === 'home')
             component = <Home/>;
-        else if (compName === 'aboutus')
+        if (compName === 'aboutus')
             component = <AboutUs/>;
-        else if (compName === 'contactus')
+        if (compName === 'contactus')
             component = <ContactUs/>;
-        else if (compName === 'gallery')
+        if (compName === 'gallery')
             component = <Gallery/>;
-        else if (compName === 'reservation')
+        if (compName === 'reservation')
             component = <Reservation/>;
-        else if (compName === 'signup')
+        if (compName === 'signup')
             component = <SignUp/>;
-        else if (compName === 'login')
+        if (compName === 'login')
             component = <Login/>;
-        else if (compName === 'order')
+        if (compName === 'order')
             component = <Order/>;
+        if (compName === 'profile')
+            component = <Profile/>;
     }
 
     return (

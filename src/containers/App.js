@@ -77,11 +77,11 @@ class App extends Component {
                             </Route>
                         </Switch>
 
-                        {/*  <Switch>*/}
-                        {/*    <Route exact path="/Profile">*/}
-                        {/*        <Layout positionFooter={false} componentName={'profile'}/>*/}
-                        {/*    </Route>*/}
-                        {/*</Switch>*/}
+                          <Switch>
+                            <Route exact path="/Profile">
+                                <Layout positionFooter={false} componentName={'profile'}/>
+                            </Route>
+                        </Switch>
 
                         {/*  <Switch>*/}
                         {/*    <Route exact path="/Payment">*/}
