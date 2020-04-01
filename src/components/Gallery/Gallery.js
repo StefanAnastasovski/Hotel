@@ -74,45 +74,49 @@ class Gallery extends Component {
 
         return (
 
-            <Aux>
+            <div className="hotel-gallery row">
 
-                <div className="image-gallery w-100 h-50 position-relative fixed-top">
+                <div className="col">
 
-                    <img className="header-pic"
-                         src={displayImg[this.state.imgIndex].original}
+                    <div className="image-gallery w-100 hotel-gallery-img-height position-relative fixed-top">
 
-                         alt="hotel"
-                         width="100%"
-                         height="100%"
-                    />
+                        <img className="header-pic"
+                             src={displayImg[this.state.imgIndex].original}
 
-                    <div className={
-                        // classes.root +
-                        'd-flex'}>
+                             alt="hotel"
+                             width="100%"
+                             height="100%"
+                        />
 
-                        <div className="position-absolute top-50 pos-left">
+                        <div className={
+                            // classes.root +
+                            'd-flex'}>
 
-                            <Button onClick={this.changeImgLeft}
-                                    variant="outlined" color="primary"
-                                    className="bg-white-20 font-weight-bold text-20px">
-                                {left}
-                            </Button>
+                            <div className="position-absolute top-50 pos-left">
 
-                        </div>
+                                <Button onClick={this.changeImgLeft}
+                                        variant="outlined" color="primary"
+                                        className="bg-white-20 font-weight-bold text-20px">
+                                    {left}
+                                </Button>
 
-                        <div className="position-absolute top-50 pos-right">
+                            </div>
 
-                            <Button onClick={this.changeImgRight}
-                                    variant="outlined" color="primary"
-                                    className='bg-white-20 font-weight-bold text-20px'>
-                                {right}
-                            </Button>
+                            <div className="position-absolute top-50 pos-right">
 
+                                <Button onClick={this.changeImgRight}
+                                        variant="outlined" color="primary"
+                                        className='bg-white-20 font-weight-bold text-20px'>
+                                    {right}
+                                </Button>
+
+                            </div>
                         </div>
                     </div>
+
                 </div>
 
-            </Aux>
+            </div>
         );
 
 
