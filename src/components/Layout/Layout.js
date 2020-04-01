@@ -10,8 +10,8 @@ class Layout extends Component {
 
     //test login
     state = {
-        // isLogin: true,
-        // username: 'Stefan',
+        isLogin: true,
+        username: 'Stefan',
         footerPosition: ''
     };
 

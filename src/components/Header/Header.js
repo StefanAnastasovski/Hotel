@@ -7,7 +7,7 @@ import logo from "../../images/logo-hotel.png";
 const Header = (props) => {
 
     let showProfile;
-    if(!props.isLogin){
+    if (!props.isLogin) {
         showProfile = (
             <Aux>
                 <li><a href="/">Home</a></li>
@@ -19,16 +19,17 @@ const Header = (props) => {
                 <li><a href="/Login">Login</a></li>
             </Aux>
         )
-    }
-    else{
+    } else {
         showProfile = (
             <Aux>
                 <li><a href="/">Home</a></li>
                 <li><a href="/About Us">About Us</a></li>
                 <li><a href="/Gallery">Gallery</a></li>
                 <li><a href="/Reservation">Reservation</a></li>
+                <li><a href="/Order">Order</a></li>
                 <li><a href="/Contact Us">Contact Us</a></li>
-                <li><a href="/Profile">Username: {props.username}</a></li>
+                <li><a href="/Profile">Profile</a></li>
+                <li><a href="/Profile">Username: <span className="new-line text-center">{props.username}</span></a></li>
             </Aux>
         )
     }
@@ -50,7 +51,7 @@ const Header = (props) => {
                 </div>
                 <div className="right-nav col">
                     <nav className="navbar navbar-inverse justify-content-end">
-                        <ul className="nav navbar-nav flex-row nav-menu">
+                        <ul className="nav navbar-nav flex-row nav-menu align-items-center">
                             {showProfile}
                         </ul>
                     </nav>

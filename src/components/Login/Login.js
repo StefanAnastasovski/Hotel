@@ -123,7 +123,7 @@ class Login extends Component {
                                 <h3 style={styleHeader}>
                                     If you do not have an account,
                                     <span className="new-line">
-                                        please click on the button to create on:
+                                        please click on the button to create one:
                                     </span>
                                 </h3>
 

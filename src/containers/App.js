@@ -59,32 +59,35 @@ class App extends Component {
                             </Route>
                         </Switch>
 
-                       <Switch>
+                        <Switch>
                             <Route exact path="/Sign Up">
                                 <Layout positionFooter={false} componentName={'signup'}/>
                             </Route>
                         </Switch>
 
-                         <Switch>
+                        <Switch>
                             <Route exact path="/Login">
                                 <Layout positionFooter={false} componentName={'login'}/>
                             </Route>
                         </Switch>
 
+                        <Switch>
+                            <Route exact path="/Order">
+                                <Layout positionFooter={false} componentName={'order'}/>
+                            </Route>
+                        </Switch>
 
-                        {/* <Switch>*/}
+                        {/*  <Switch>*/}
                         {/*    <Route exact path="/Profile">*/}
-                        {/*        <Layout positionFooter={false} componentName={'reservation'}/>*/}
+                        {/*        <Layout positionFooter={false} componentName={'profile'}/>*/}
                         {/*    </Route>*/}
                         {/*</Switch>*/}
 
                         {/*  <Switch>*/}
                         {/*    <Route exact path="/Payment">*/}
-                        {/*        <Layout positionFooter={false} componentName={'reservation'}/>*/}
+                        {/*        <Layout positionFooter={false} componentName={'payment'}/>*/}
                         {/*    </Route>*/}
                         {/*</Switch>*/}
-
-
 
                     </Router>
 
@@ -98,3 +101,5 @@ class App extends Component {
 }
 
 export default App;
+
+// { var variable = something && <input ..... > }

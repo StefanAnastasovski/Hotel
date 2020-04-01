@@ -10,6 +10,7 @@ import Gallery from "../Gallery/Gallery";
 import Reservation from "../Reservation/Reservation"
 import SignUp from "../SignUp/SignUp";
 import Login from "../Login/Login";
+import Order from "../Order/Order";
 
 const Main = (props) => {
 
@@ -31,6 +32,8 @@ const Main = (props) => {
             component = <SignUp/>;
         else if (compName === 'login')
             component = <Login/>;
+        else if (compName === 'order')
+            component = <Order/>;
     }
 
     return (

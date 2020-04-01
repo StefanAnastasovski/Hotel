@@ -120,14 +120,14 @@ class Reservation extends Component {
 
                     <div className="col pl-1">
 
-                        <select name="number_of_quest" className="w-100 select-reservation">
+                        <select name="number_of_guest" className="w-100 select-reservation">
 
-                            <option value="1guest">1 Quest</option>
-                            <option value="2guests">2 Quests</option>
-                            <option value="3guests">3 Quests</option>
-                            <option value="4guests">4 Quests</option>
-                            <option value="5guests">5 Quests</option>
-                            <option value="6guests">6 Quests</option>
+                            <option value="1guest">1 Guest</option>
+                            <option value="2guests">2 Guests</option>
+                            <option value="3guests">3 Guests</option>
+                            <option value="4guests">4 Guests</option>
+                            <option value="5guests">5 Guests</option>
+                            <option value="6guests">6 Guests</option>
 
                         </select>
 
@@ -199,7 +199,7 @@ class Reservation extends Component {
 
                     <div className="col pr-1">
 
-                        <select name="number_of_quests" className="w-100 select-reservation" aria-label="party size">
+                        <select name="number_of_guests" className="w-100 select-reservation" aria-label="party size">
 
                             <option value="1">1 person</option>
                             <option value="2">2 people</option>
@@ -262,6 +262,7 @@ class Reservation extends Component {
             );
 
         } else {
+
             showReservationPage = (
 
                 <Aux>
@@ -274,7 +275,7 @@ class Reservation extends Component {
 
                         <p className="text-center">
                             If you want to reserve a room or table,
-                            please click on the appropriate button
+                            please click on the appropriate button.
                             <span className="new-line font-weight-bold">
                                         Thank you!
                                     </span>
