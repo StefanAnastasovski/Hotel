@@ -1,10 +1,12 @@
 import React, {Component} from "react";
 
 import Aux from "../../hoc/Auxilliary";
+
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Main from "../Main/Main";
 
+import './Layout.css';
 
 class Layout extends Component {
 

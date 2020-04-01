@@ -3,6 +3,8 @@ import React, {Component} from "react";
 
 import DatePicker from "react-datepicker";
 
+import './SignUp.css';
+
 class SignUp extends Component {
 
     state = {

@@ -1,9 +1,11 @@
 import React from "react";
-import '../common/height-100.css'
+
 import Aux from "../../hoc/Auxilliary";
+
 import mainPicture from '../../images/picture-1.jpg'
 import miamiPicture from '../../images/miami.jpg'
 
+import './Home.css';
 
 const Home = () => {
 

@@ -1,6 +1,5 @@
 import React from "react";
 
-import '../Layout/layout.css'
 import Aux from "../../hoc/Auxilliary";
 
 import Home from "../Home/Home";
@@ -11,6 +10,8 @@ import Reservation from "../Reservation/Reservation"
 import SignUp from "../SignUp/SignUp";
 import Login from "../Login/Login";
 import Order from "../Order/Order";
+
+import './Main.css';
 
 const Main = (props) => {
 

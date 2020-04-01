@@ -1,13 +1,12 @@
 import React from "react";
 
-import '../Layout/layout.css'
-import '../common/footer-position-bottom.css'
-
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFacebook} from "@fortawesome/free-brands-svg-icons";
 import {faInstagram} from "@fortawesome/free-brands-svg-icons";
 import {faTwitter} from "@fortawesome/free-brands-svg-icons";
 import {faMailBulk} from "@fortawesome/free-solid-svg-icons";
+
+import './Footer.css';
 
 const Footer = (props) => {
 

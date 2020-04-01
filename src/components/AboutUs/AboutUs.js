@@ -1,7 +1,8 @@
 import React from "react";
+
 import Aux from "../../hoc/Auxilliary";
+
 import './AboutUs.css'
-import '../common/height-100-without-scroll.css'
 
 
 const AboutUs = () => {

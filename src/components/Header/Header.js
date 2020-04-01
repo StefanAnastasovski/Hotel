@@ -1,8 +1,11 @@
 import React from "react";
 
 import Aux from "../../hoc/Auxilliary";
-import '../Layout/layout.css'
+
 import logo from "../../images/logo-hotel.png";
+
+import './Header.css';
+
 
 const Header = (props) => {
 
