@@ -19,6 +19,7 @@ const Main = (props) => {
     let component = {};
     let compName = props.componentName;
 
+    console.log(props.obj);
     if (compName) {
         if (compName === 'home')
             component = <Home/>;
@@ -37,7 +38,7 @@ const Main = (props) => {
         if (compName === 'order')
             component = <Order/>;
         if (compName === 'profile')
-            component = <Profile/>;
+            component = <Profile obj = {props.obj}/>;
     }
 
     return (
