@@ -78,7 +78,6 @@ class Order extends Component {
             borderRadius: '10px',
             padding: '5px 3px',
             border: '1px solid grey',
-
         };
 
         let showReservationInfo;
@@ -467,7 +466,7 @@ class Order extends Component {
 
                                                             <div className="row">
 
-                                                                <div className="col">
+                                                                <div className="col mr-1">
 
                                                                     <label className="w-100">
                                                                         <span className="new-line">Date:</span>
@@ -479,7 +478,7 @@ class Order extends Component {
 
                                                                 </div>
 
-                                                                <div className="col">
+                                                                <div className="col ml-1">
 
                                                                     <label className="w-100">
                                                                         <span className="new-line">Time:</span>

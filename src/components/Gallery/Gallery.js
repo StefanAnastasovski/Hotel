@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 
-import Aux from "../../hoc/Auxilliary";
 import Button from '@material-ui/core/Button';
 
 import './Gallery.css';

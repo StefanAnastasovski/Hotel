@@ -77,11 +77,11 @@ const ContactUs = (props) => {
 
                                 <Form.Row>
 
-                                    <div className="w-50">
+                                    <div className="col mr-1">
 
                                         <Form.Group controlId="validationCustom01">
 
-                                            <Form.Label>First name</Form.Label>
+                                            <Form.Label className="font-weight-bold">First name:</Form.Label>
 
                                             <Form.Control
                                                 required
@@ -95,11 +95,11 @@ const ContactUs = (props) => {
 
                                     </div>
 
-                                    <div className="w-50">
+                                    <div className="col ml-1">
 
                                         <Form.Group controlId="validationCustom02">
 
-                                            <Form.Label>Last name</Form.Label>
+                                            <Form.Label className="font-weight-bold">Last name:</Form.Label>
 
                                             <Form.Control
                                                 required
@@ -119,7 +119,7 @@ const ContactUs = (props) => {
 
                                 <Form.Group controlId="exampleForm.ControlInput1">
 
-                                    <Form.Label>Email address</Form.Label>
+                                    <Form.Label className="font-weight-bold">Email:</Form.Label>
 
                                     <Form.Control type="email" placeholder="name@example.com"/>
 
@@ -127,7 +127,7 @@ const ContactUs = (props) => {
 
                                 <Form.Group controlId="exampleForm.ControlTextarea1">
 
-                                    <Form.Label>Enter ...</Form.Label>
+                                    <Form.Label className="font-weight-bold">Enter ...</Form.Label>
 
                                     <Form.Control as="textarea" rows="3"/>
 

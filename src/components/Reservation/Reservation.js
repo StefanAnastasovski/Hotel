@@ -140,7 +140,7 @@ class Reservation extends Component {
 
                 <Aux>
 
-                    <div className="col py-2">
+                    <div className="col py-2 mr-1">
 
                         <label className="w-100">
                             <span className="new-line">Start Date:</span>
@@ -152,7 +152,7 @@ class Reservation extends Component {
 
                     </div>
 
-                    <div className="col py-2">
+                    <div className="col py-2 ml-1">
 
                         <label className="w-100">
                             <span className="new-line">End Date:</span>
@@ -234,7 +234,7 @@ class Reservation extends Component {
 
                 <Aux>
 
-                    <div className="col">
+                    <div className="col mr-1">
 
                         <label className="w-100">
                             <span className="new-line">Date:</span>
@@ -246,7 +246,7 @@ class Reservation extends Component {
 
                     </div>
 
-                    <div className="col w-100">
+                    <div className="col w-100 ml-1">
                         <label className="w-100">
                             <span className="new-line">Time:</span>
                             <TimePicker
