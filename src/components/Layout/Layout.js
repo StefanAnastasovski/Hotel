@@ -1,7 +1,5 @@
 import React, {Component} from "react";
 
-import Aux from "../../hoc/Auxilliary";
-
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Main from "../Main/Main";
@@ -11,8 +9,9 @@ import './Layout.css';
 class Layout extends Component {
 
     //test login
+    // If you want to log in, change {isLogin: false} -> {isLogin:true}
     state = {
-        isLogin: true,
+        isLogin: false,
         username: 'Stefan',
         footerPosition: '',
         firstName: 'stefan',
@@ -26,24 +25,32 @@ class Layout extends Component {
     render() {
         console.log(this.props);
         var username = this.state.username;
-        var  obj = {
-         firstName : this.state.firstName,
-        lastName : this.state.lastName,
-        email: this.state.email,
-        gender: this.state.gender,
-        birthday: this.state.birthday,
-        username: this.state.username,
-    };
+        //test payment - profile info
+        var obj = {
+            firstName: this.state.firstName,
+            lastName: this.state.lastName,
+            email: this.state.email,
+            gender: this.state.gender,
+            birthday: this.state.birthday,
+            username: this.state.username,
+        };
+
+        let divClass = this.props.componentName.concat('-container');
+
         return (
-            <Aux>
+            <div className={divClass}>
+
                 <Header isLogin={this.state.isLogin} username={username}/>
+
                 <Main componentName={this.props.componentName}
                       username={username}
-                        obj={obj}
-            />
-        <Footer positionFooter={this.props.positionFooter}/>
-    </Aux>
-    )
+                      obj={obj}
+                />
+
+                <Footer positionFooter={this.props.positionFooter}/>
+
+            </div>
+        )
     }
 
 };

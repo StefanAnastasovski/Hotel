@@ -1,19 +1,43 @@
 import React, {Component} from 'react';
 
 import Button from '@material-ui/core/Button';
-
+import img1 from '../../images/gallery/1.jpg';
+import img2 from '../../images/gallery/2.jpg';
+import img3 from '../../images/gallery/3.jpg';
+import img4 from '../../images/gallery/4.jpg';
+import img5 from '../../images/gallery/5.jpg';
+import img6 from '../../images/gallery/6.jpg';
+import img7 from '../../images/gallery/7.jpg';
+import img8 from '../../images/gallery/8.jpg';
 import './Gallery.css';
 
 const images = [
+
     {
-        original: 'http://lorempixel.com/1000/600/nature/1/'
+        original: img1
     },
     {
-        original: 'http://lorempixel.com/1000/600/nature/2/'
+        original: img2
     },
     {
-        original: 'http://lorempixel.com/1000/600/nature/3/'
+        original: img3
+    },
+    {
+        original: img4
+    },
+    {
+        original: img5
+    },
+    {
+        original: img6
+    },
+    {
+        original: img7
+    },
+    {
+        original: img8
     }
+
 ];
 
 

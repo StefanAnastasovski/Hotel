@@ -1,3 +1,15 @@
+.reservation-container{
+    height: 100vh;
+    position: relative;
+}
+
+.reservation-container .reservation-main, .reservation-container .room,
+.reservation-container .table{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .reservation > p{
     font-size: 1.2em !important;

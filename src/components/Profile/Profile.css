@@ -1,3 +1,15 @@
+.profile-container {
+    height: 100vh;
+    position: relative;
+}
+
+.profile .profile-main, .profile .payment-information-main{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .profile p {
     margin-bottom: 5px;
 }
@@ -44,3 +56,7 @@
     border: 1px solid grey;
 }
 
+.footer.footer-absolute{
+    /*position: fixed !important;*/
+    bottom: 0;
+}

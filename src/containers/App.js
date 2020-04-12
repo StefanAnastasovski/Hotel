@@ -43,43 +43,43 @@ class App extends Component {
 
                         <Switch>
                             <Route exact path="/Contact Us">
-                                <Layout componentName={'contactus'}/>
+                                <Layout  positionFooter={true} componentName={'contactus'}/>
                             </Route>
                         </Switch>
 
                         <Switch>
                             <Route exact path="/Gallery">
-                                <Layout positionFooter={false} componentName={'gallery'}/>
+                                <Layout positionFooter={true} componentName={'gallery'}/>
                             </Route>
                         </Switch>
 
                         <Switch>
                             <Route exact path="/Reservation">
-                                <Layout positionFooter={false} componentName={'reservation'}/>
+                                <Layout positionFooter={true} componentName={'reservation'}/>
                             </Route>
                         </Switch>
 
                         <Switch>
                             <Route exact path="/Sign Up">
-                                <Layout positionFooter={false} componentName={'signup'}/>
+                                <Layout positionFooter={true} componentName={'signup'}/>
                             </Route>
                         </Switch>
 
                         <Switch>
                             <Route exact path="/Login">
-                                <Layout positionFooter={false} componentName={'login'}/>
+                                <Layout positionFooter={true} componentName={'login'}/>
                             </Route>
                         </Switch>
 
                         <Switch>
                             <Route exact path="/Order">
-                                <Layout positionFooter={false} componentName={'order'}/>
+                                <Layout positionFooter={true} componentName={'order'}/>
                             </Route>
                         </Switch>
 
                           <Switch>
                             <Route exact path="/Profile">
-                                <Layout positionFooter={false} componentName={'profile'}/>
+                                <Layout positionFooter={true} componentName={'profile'}/>
                             </Route>
                         </Switch>
 

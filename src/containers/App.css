@@ -56,6 +56,11 @@
     width:100%;
 }
 
+.footer-absolute{
+    position: absolute;
+    bottom: 0;
+}
+
 .layout-container{
    min-height: 100%;
    background-image: url("../images/background.jpg");

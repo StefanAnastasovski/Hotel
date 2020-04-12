@@ -265,9 +265,9 @@ class Reservation extends Component {
 
             showReservationPage = (
 
-                <Aux>
+                <div className="reservation-main">
 
-                    <div className="text-reservation text-center mt-3">
+                    <div className="text-reservation text-center">
 
                         <h1 className="text-color-title">
                             Make Reservation
@@ -346,7 +346,7 @@ class Reservation extends Component {
                         </div>
                     </div>
 
-                </Aux>
+                </div>
 
             );
         }

@@ -96,116 +96,119 @@ class Profile extends PureComponent {
         let newEmail = this.state.emailValue;
         let btnBack = (
 
-               <div className="btn-back d-flex justify-content-end my-3">
-                    <button onClick={this.btnBackHandler}
-                            className="btn-bill-payment-info"
-                    >
+            <div className="btn-back d-flex justify-content-end my-3">
+                <button onClick={this.btnBackHandler}
+                        className="btn-bill-payment-info"
+                >
 
-                        Back to Profile
-                    </button>
-                </div>
+                    Back to Profile
+                </button>
+            </div>
 
         );
 
         let showProfilePage = (
 
-            <div className="d-flex my-3">
+            <div className="profile-main">
 
-                <div className="col">
+                <div className="d-flex py-3">
 
-                    <h3 className="text-color-title text-center">Personal Information</h3>
+                    <div className="col">
 
-                    <div className="personal-information ">
+                        <h3 className="text-color-title text-center">Personal Information</h3>
 
-                        <p className="font-weight-bold">First Name:
-                            <span className="new-line font-weight-normal">
+                        <div className="personal-information ">
+
+                            <p className="font-weight-bold">First Name:
+                                <span className="new-line font-weight-normal">
                                             {personalInfo.firstName}
                                         </span>
-                        </p>
+                            </p>
 
-                        <p className="font-weight-bold">Last Name:
-                            <span className="new-line font-weight-normal">
+                            <p className="font-weight-bold">Last Name:
+                                <span className="new-line font-weight-normal">
                                             {personalInfo.lastName}
                                         </span>
-                        </p>
+                            </p>
 
-                        <p className="font-weight-bold">Birthday:
-                            <span className="new-line font-weight-normal">
+                            <p className="font-weight-bold">Birthday:
+                                <span className="new-line font-weight-normal">
                                             {personalInfo.birthday}
                                         </span>
-                        </p>
+                            </p>
 
-                        <p className="font-weight-bold">Gender:
-                            <span className="new-line font-weight-normal">
+                            <p className="font-weight-bold">Gender:
+                                <span className="new-line font-weight-normal">
                                             {personalInfo.gender}
                                         </span>
-                        </p>
+                            </p>
 
-                        <p className="font-weight-bold">Username:
-                            <span className="new-line font-weight-normal">
+                            <p className="font-weight-bold">Username:
+                                <span className="new-line font-weight-normal">
                                             {personalInfo.username}
                                         </span>
-                        </p>
+                            </p>
 
-                        <p className="font-weight-bold">Email:</p>
+                            <p className="font-weight-bold">Email:</p>
 
-                        <form method="POST" onSubmit={this.handleSubmit}>
-                            {!this.state.showEditEmailField ?
-                                <Aux clas>
-                                    <p className="font-weight-normal d-inline">
-                                        {newEmail}
-                                    </p>
-                                    {
-                                        this.state.showEditBtn &&
-                                        <input type="submit" value="Edit Email"
-                                               className="btn-submit-new-email py-0"
-                                               onClick={this.editBtnHandler}/>
-                                    }
-                                    {this.state.showSuccess && <p className="bg-success">
-                                        email successfully changed!
-                                    </p>}
-                                </Aux>
+                            <form method="POST" onSubmit={this.handleSubmit}>
+                                {!this.state.showEditEmailField ?
+                                    <Aux clas>
+                                        <p className="font-weight-normal d-inline">
+                                            {newEmail}
+                                        </p>
+                                        {
+                                            this.state.showEditBtn &&
+                                            <input type="submit" value="Edit Email"
+                                                   className="btn-submit-new-email py-0"
+                                                   onClick={this.editBtnHandler}/>
+                                        }
+                                        {this.state.showSuccess && <p className="bg-success">
+                                            email successfully changed!
+                                        </p>}
+                                    </Aux>
 
-                                :
-                                <Aux>
-                                    <input type="email" name="new-email"
-                                           className="new-email-field"
-                                           defaultValue={newEmail}
-                                           onChange={this.newEmailHandler}
-                                    />
+                                    :
+                                    <Aux>
+                                        <input type="email" name="new-email"
+                                               className="new-email-field"
+                                               defaultValue={newEmail}
+                                               onChange={this.newEmailHandler}
+                                        />
 
-                                    <input type="submit" value="Submit" className="btn-submit-new-email"
-                                           onClick={this.showSuccessfullyChangedHandler}
-                                    />
-                                </Aux>}
-                        </form>
-
-
-                    </div>
-
-                </div>
-
-                <div className="col">
-
-                    <h3 className="text-color-title text-center">Bill Information & Payment</h3>
-
-                    <div className="bill-info-payment text-center">
-
-                        <div className="mt-5 w-100">
-                            <button onClick={this.showBillHandler}
-                                    className="btn-bill-payment-info w-75"
-                            >
-                                Check Bill
-                            </button>
+                                        <input type="submit" value="Submit" className="btn-submit-new-email"
+                                               onClick={this.showSuccessfullyChangedHandler}
+                                        />
+                                    </Aux>}
+                            </form>
 
                         </div>
 
-                        <div className="mt-5">
-                            <button onClick={this.showPaymentHandler}
-                                    className="btn-bill-payment-info w-75"
-                            >
-                                Pay Your Bill
-                            </button>
+                    </div>
+
+                    <div className="col">
+
+                        <h3 className="text-color-title text-center">Bill Information & Payment</h3>
+
+                        <div className="bill-info-payment text-center">
+
+                            <div className="mt-5 w-100">
+                                <button onClick={this.showBillHandler}
+                                        className="btn-bill-payment-info w-75"
+                                >
+                                    Check Bill
+                                </button>
+
+                            </div>
+
+                            <div className="mt-5">
+                                <button onClick={this.showPaymentHandler}
+                                        className="btn-bill-payment-info w-75"
+                                >
+                                    Pay Your Bill
+                                </button>
+                            </div>
+
                         </div>
 
                     </div>
@@ -217,34 +220,81 @@ class Profile extends PureComponent {
         );
 
         let showBill = (
+            <div className="bill-information-main">
 
-            <div className="bill-information">
+                <div className="bill-information">
 
-                <h1 className="text-color-title text-center m-3">Bill Information</h1>
+                    <h1 className="text-color-title text-center p-3">Bill Information</h1>
 
-                <div className="row d-flex">
+                    <div className="row d-flex">
 
-                    <div className="col">
+                        <div className="col">
 
-                        <h4 className="text-center">Reservation</h4>
+                            <h4 className="text-center">Reservation</h4>
 
-                        <div className="d-flex justify-content-between mx-5 bill-card-border">
+                            <div className="d-flex justify-content-between mx-5 bill-card-border">
 
-                            <div className="room-reserved">
+                                <div className="room-reserved">
 
-                                {/*which Room is reserved*/}
-                                <p className="font-weight-bold">
-                                    Reserved Rooms:
-                                </p>
+                                    {/*which Room is reserved*/}
+                                    <p className="font-weight-bold">
+                                        Reserved Rooms:
+                                    </p>
+
+                                    <p>
+                                        Room 1
+                                    </p>
+
+                                </div>
+
+                                <div className="table-reserved">
+
+                                    {/*which Table is reserved*/}
+                                    <p className="font-weight-bold">
+                                        Reserved Tables:
+                                    </p>
+
+                                    <p>
+                                        Table 1
+                                    </p>
+
+                                </div>
 
                             </div>
 
-                            <div className="table-reserved">
+                        </div>
 
-                                {/*which Table is reserved*/}
-                                <p className="font-weight-bold">
-                                    Reserved Tables:
-                                </p>
+                        <div className="col">
+
+                            <h4 className="text-center">Order</h4>
+
+                            <div className="d-flex justify-content-between mx-5 bill-card-border">
+
+                                <div className="services-ordered">
+
+                                    {/*which Services are ordered*/}
+                                    <p className="font-weight-bold">
+                                        Ordered Services:
+                                    </p>
+
+                                    <p>
+                                        Service 1
+                                    </p>
+
+                                </div>
+
+                                <div className="fooddrinks-ordered">
+
+                                    {/*which Food&Drinks are ordered*/}
+                                    <p className="font-weight-bold">
+                                        Ordered Food & Drinks:
+                                    </p>
+
+                                    <p>
+                                        Food & Drinks 1
+                                    </p>
+
+                                </div>
 
                             </div>
 
@@ -252,37 +302,10 @@ class Profile extends PureComponent {
 
                     </div>
 
-                    <div className="col">
-
-                        <h4 className="text-center">Order</h4>
-
-                        <div className="d-flex justify-content-between mx-5 bill-card-border">
-
-                            <div className="services-ordered">
-
-                                {/*which Services are ordered*/}
-                                <p className="font-weight-bold">
-                                    Ordered Services:
-                                </p>
-
-                            </div>
-
-                            <div className="fooddrinks-ordered">
-
-                                {/*which Food&Drinks are ordered*/}
-                                <p className="font-weight-bold">
-                                    Ordered Food & Drinks:
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
+                    {btnBack}
 
                 </div>
 
-                {btnBack}
 
             </div>
 
@@ -290,134 +313,139 @@ class Profile extends PureComponent {
 
         let showPayBill = (
 
-            <div className="payment-information">
+            <div className="payment-information-main">
 
-                <h1 className="text-color-title text-center m-3">Payment Information</h1>
+                <div className="payment-information">
 
-                <div className="row d-flex my-3">
+                    <h1 className="text-color-title text-center p-3">Payment Information</h1>
 
-                    <div className="col mr-1">
+                    <div className="row d-flex my-3">
 
-                        <div className="client-information bill-card-border p-3">
+                        <div className="col mr-1">
 
-                            <p className="font-weight-bold">
-                                Username:
-                                <span className="font-weight-normal pl-3">
+                            <div className="client-information bill-card-border p-3">
+
+                                <p className="font-weight-bold">
+                                    Username:
+                                    <span className="font-weight-normal pl-3">
                                     {personalInfo.username}
                                 </span>
-                            </p>
+                                </p>
 
-                            <p className="font-weight-bold">
-                                Full Name:
-                                <span className="font-weight-normal pl-3">
+                                <p className="font-weight-bold">
+                                    Full Name:
+                                    <span className="font-weight-normal pl-3">
                                     {personalInfo.firstName + " " + personalInfo.lastName}
                                 </span>
-                            </p>
+                                </p>
 
-                            <p className="font-weight-bold">
-                                Room Number:
-                                <span className="font-weight-normal pl-3">
+                                <p className="font-weight-bold">
+                                    Room Number:
+                                    <span className="font-weight-normal pl-3">
                                 {/*{personalInfo.roomNumber}*/}
-                                    #34
+                                        #34
                                 </span>
-                            </p>
+                                </p>
 
-                            <p className="font-weight-bold">
-                                Total Bill Amount:
-                                <span className="font-weight-normal pl-3">
+                                <p className="font-weight-bold">
+                                    Total Bill Amount:
+                                    <span className="font-weight-normal pl-3">
                                 {/*{personalInfo.roomNumber}*/}
-                                    43434 $
+                                        43434 $
                                 </span>
-                            </p>
+                                </p>
+                            </div>
+
                         </div>
 
-                    </div>
+                        <div className="col ml-1">
 
-                    <div className="col ml-1">
+                            <div className="payment-information bill-card-border p-3">
 
-                        <div className="payment-information bill-card-border p-3">
+                                <form method="POST" onSubmit={this.handleSubmit}>
 
-                            <form method="POST" onSubmit={this.handleSubmit}>
+                                    <div className="row">
 
-                                <div className="row">
-
-                                    <div className="col mr-1">
-                                        <label htmlFor="cardfullname" className='font-weight-bold pr-2'>Full
-                                            Name:</label>
-                                        <input type="text" name="cardfullname"
-                                               className="new-line card-information w-100 pl-2" required
-                                               placeholder="John Doe"
-                                               id="cardfullname"
-                                        />
-                                    </div>
-
-                                    <div className="col ml-1">
-                                        <label htmlFor="cardinformation" className='font-weight-bold pr-2'>Card
-                                            Number:</label>
-                                        <input type="text" name="cardinformation"
-                                               className="new-line card-information w-100 pl-2" required
-                                               placeholder="xxxx-xxxx-xxxx-xxxx"
-                                               id="cardinformation"
-                                        />
-                                    </div>
-
-                                </div>
-
-                                <div className="row">
-
-                                    <div className="col">
-
-                                        <label htmlFor="cardccv" className='font-weight-bold pr-2 pt-2'>Security
-                                            Code(CCV):</label>
-                                        <input type="text" name="cardccv"
-                                               className="new-line card-information w-25 pl-2" required
-                                               placeholder="xxx"
-                                               id="cardccv"
-                                        />
-
-                                    </div>
-
-
-                                    <div className="col">
-
-                                        <label htmlFor="cardccv" className='font-weight-bold pr-2 pt-2'>Expiration
-                                            date:</label>
-                                        <div className="d-flex">
-
-                                            <input type="text" name="cardexdate-mm"
-                                                   className="new-line card-information w-25 pl-2" required
-                                                   placeholder="MM"
+                                        <div className="col mr-1">
+                                            <label htmlFor="cardfullname" className='font-weight-bold pr-2'>Full
+                                                Name:</label>
+                                            <input type="text" name="cardfullname"
+                                                   className="new-line card-information w-100 pl-2" required
+                                                   placeholder="John Doe"
+                                                   id="cardfullname"
                                             />
-                                            <label className="mx-3 font"> / </label>
-                                            <input type="text" name="cardexdate-yy"
-                                                   className="new-line card-information w-25 pl-2" required
-                                                   placeholder="YY"
-                                            />
+                                        </div>
 
+                                        <div className="col ml-1">
+                                            <label htmlFor="cardinformation" className='font-weight-bold pr-2'>Card
+                                                Number:</label>
+                                            <input type="text" name="cardinformation"
+                                                   className="new-line card-information w-100 pl-2" required
+                                                   placeholder="xxxx-xxxx-xxxx-xxxx"
+                                                   id="cardinformation"
+                                            />
                                         </div>
 
                                     </div>
 
+                                    <div className="row">
 
-                                </div>
+                                        <div className="col">
 
-                                <div className="text-center mt-3">
-                                    {/*onClick={this.handleSubmit}*/}
-                                    <input type="submit"
-                                           className="btn-bill-payment-info w-75"
-                                           value="Submit" name="paybill"/>
-                                </div>
+                                            <label htmlFor="cardccv" className='font-weight-bold pr-2 pt-2'>Security
+                                                Code(CCV):</label>
+                                            <input type="text" name="cardccv"
+                                                   className="new-line card-information w-25 pl-2" required
+                                                   placeholder="xxx"
+                                                   id="cardccv"
+                                            />
 
-                            </form>
+                                        </div>
 
+
+                                        <div className="col">
+
+                                            <label htmlFor="cardccv" className='font-weight-bold pr-2 pt-2'>Expiration
+                                                date:</label>
+                                            <div className="d-flex">
+
+                                                <input type="text" name="cardexdate-mm"
+                                                       className="new-line card-information w-25 pl-2" required
+                                                       placeholder="MM"
+                                                />
+                                                <label className="mx-3 font"> / </label>
+                                                <input type="text" name="cardexdate-yy"
+                                                       className="new-line card-information w-25 pl-2" required
+                                                       placeholder="YY"
+                                                />
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div className="text-center mt-3">
+                                        {/*onClick={this.handleSubmit}*/}
+                                        <input type="submit"
+                                               className="btn-bill-payment-info w-75"
+                                               value="Submit" name="paybill"/>
+                                    </div>
+
+                                </form>
+
+
+                            </div>
 
                         </div>
 
                     </div>
 
+                    {btnBack}
+
                 </div>
 
-                {btnBack}
 
             </div>
 

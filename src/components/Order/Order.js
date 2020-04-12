@@ -80,10 +80,10 @@ class Order extends Component {
             border: '1px solid grey',
         };
 
-        let showReservationInfo;
-        let showReservationDate;
+        let showOrderInfo;
+        let showOrderDate;
         let reservationTitle = 'Place an Order';
-        let showReservationPage;
+        let showOrderPage;
         let showOrder;
         let additionalRequestText;
         let totalPriceField;
@@ -289,11 +289,11 @@ class Order extends Component {
 
         } else {
 
-            showReservationPage = (
+            showOrderPage = (
 
-                <Aux>
+                <div className="order-main">
 
-                    <div className="text-reservation text-center mt-3">
+                    <div className="text-reservation text-center">
 
                         <h1 className="text-color-title">
                             Place an Order
@@ -368,13 +368,14 @@ class Order extends Component {
 
                     </div>
 
-                </Aux>
+
+                </div>
 
             );
         }
         if (this.state.showResServices || this.state.showResMenu) {
 
-            showReservationPage = (
+            showOrderPage = (
 
                 <div className="room container">
 
@@ -495,13 +496,13 @@ class Order extends Component {
 
                                                             <div className="row py-2">
 
-                                                                {showReservationInfo}
+                                                                {showOrderInfo}
 
                                                             </div>
 
                                                             <div className="col d-flex">
 
-                                                                {showReservationDate}
+                                                                {showOrderDate}
 
                                                             </div>
 
@@ -554,7 +555,7 @@ class Order extends Component {
 
                             <div className="col">
 
-                                {showReservationPage}
+                                {showOrderPage}
 
                             </div>
 

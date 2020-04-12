@@ -57,88 +57,92 @@ class Login extends Component {
 
                     <div className="container">
 
-                        <div className="row">
+                        <div className="login-main">
 
-                            <div className="col my-3">
-                                <h1 className="text-center" style={styleHeader}>Log In</h1>
+                            <div className="row">
+
+                                <div className="col my-3">
+                                    <h1 className="text-center" style={styleHeader}>Log In</h1>
+                                </div>
+
                             </div>
 
-                        </div>
+                            <div className="row">
 
-                        <div className="row">
+                                <div className="col">
 
-                            <div className="col">
+                                    <div className="w-50 m-auto">
 
-                                <div className="w-50 m-auto">
+                                        <form method="POST" onSubmit={this.onSubmit}>
 
-                                    <form method="POST" onSubmit={this.onSubmit}>
+                                            <div className="row ">
 
-                                        <div className="row ">
+                                                <div className="col">
 
-                                            <div className="col">
+                                                    <label className="w-100 pr-1">
+                                                        Username:
+                                                        <input type="text" className="new-line w-100 px-2"
+                                                               name="login-username"
+                                                               required style={styleInputField}/>
+                                                    </label>
 
-                                                <label className="w-100 pr-1">
-                                                    Username:
-                                                    <input type="text" className="new-line w-100 px-2"
-                                                           name="login-username"
-                                                           required style={styleInputField}/>
-                                                </label>
-
-                                            </div>
-
-                                        </div>
-
-                                        <div className="row">
-
-                                            <div className="col">
-
-                                                <label className="w-100 pr-1">
-                                                    Password:
-                                                    <input type="password" className="new-line w-100 px-2"
-                                                           name="su-password"
-                                                           required style={styleInputField} placeholder="password"/>
-                                                </label>
+                                                </div>
 
                                             </div>
 
-                                        </div>
+                                            <div className="row">
+
+                                                <div className="col">
+
+                                                    <label className="w-100 pr-1">
+                                                        Password:
+                                                        <input type="password" className="new-line w-100 px-2"
+                                                               name="su-password"
+                                                               required style={styleInputField} placeholder="password"/>
+                                                    </label>
+
+                                                </div>
+
+                                            </div>
 
 
-                                        <button type="submit"
-                                                className="my-3"
-                                                style={styleButton}
-                                                name="login">
-                                            Login
-                                        </button>
+                                            <button type="submit"
+                                                    className="my-3"
+                                                    style={styleButton}
+                                                    name="login">
+                                                Login
+                                            </button>
 
-                                    </form>
+                                        </form>
+
+                                    </div>
 
                                 </div>
 
                             </div>
 
-                        </div>
+                            <div className="row">
 
-                        <div className="row">
+                                <div className="col my-3 text-center">
 
-                            <div className="col my-3 text-center">
-
-                                <h3 style={styleHeader}>
-                                    If you do not have an account,
-                                    <span className="new-line">
+                                    <h3 style={styleHeader}>
+                                        If you do not have an account,
+                                        <span className="new-line">
                                         please click on the button to create one:
                                     </span>
-                                </h3>
+                                    </h3>
 
-                                {this.renderRedirectHandler()}
+                                    {this.renderRedirectHandler()}
 
-                                <input
-                                    className="w-50 m-auto"
-                                    type="button"
-                                    value="Sign Up"
-                                    onClick={this.setRedirectHandler}
-                                    style={styleButton}
-                                />
+                                    <input
+                                        className="w-50 m-auto"
+                                        type="button"
+                                        value="Sign Up"
+                                        onClick={this.setRedirectHandler}
+                                        style={styleButton}
+                                    />
+
+                                </div>
 
                             </div>
 

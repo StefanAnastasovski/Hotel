@@ -1,3 +1,16 @@
+.order-container{
+        height: 100vh;
+        position: relative;
+}
+
+.order-container .order-main{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 .reservation-services-gallery, .reservation-menu-gallery {
     height: 300px;
 }
